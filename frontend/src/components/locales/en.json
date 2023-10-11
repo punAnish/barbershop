@@ -1,0 +1,56 @@
+{
+  "translation": {
+    "pageTitle": "Page Title in English",
+    "someText": "Some text on the page in English",
+    "selectService": "-- Select a service --",
+    "navbar": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "login": "Login",
+      "signup": "Signup",
+      "logout": "Logout"
+    }
+  },
+  "appointmentForm": {
+    "customerName": "Customer Name",
+    "serviceType": "Service Type",
+    "date": "Date",
+    "timeSlot": "Time Slot",
+    "notes": "Notes",
+    "submit": "Submit",
+    "error": "You must be logged in",
+    "bookAppointment": "Book an Appointment",
+    "dateAndTimeInvalid": "Invalid Date and Time"
+  },
+  "home": {
+    "welcome": "Welcome to Barbershop MP",
+    "description": "Your one-stop destination for the perfect haircut!",
+    "bookNow": "Book Now"
+  },
+  "serviceTypes": {
+    "childrenHaircut": "Children Haircut",
+    "adultHaircut": "Adult Haircut",
+    "shaving": "Shaving",
+    "hairColoring": "Hair Coloring"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "description": "BarbershopMP, founded in 2023 by two senior Hair Stylists, is a testament to a shared vision of delivering exceptional grooming experiences. At the heart of BarbershopMP is a dedication to craftsmanship, where each haircut is a canvas and every service is a masterpiece. We invite you to indulge in a journey of style, guided by our expert barbers who blend tradition with modern techniques. BarbershopMP’s commitment to excellence extends beyond the chair, offering carefully curated products and a warm atmosphere that reflects our passion for grooming. Join us at BarbershopMP, where every visit is an opportunity to redefine your style and elevate your confidence.",
+    "mapTitle": "BarbershopMP map",
+    "contactTitle": "Contact Us",
+    "contactInfo": "For appointments and inquiries, please reach out to us at",
+    "contactText": "Feel free to contact us with any questions or to book your grooming experience",
+    "openingHoursTitle": "Opening Hours",
+    "openingHoursText": "Monday to Friday: 9:00 AM to 8:00 PM\nSaturday: 11:00 AM to 4:00 PM\nSunday: Closed"
+  },
+  "services": {
+    "title": "Services and Pricing",
+    "serviceTypes": {
+      "childrenHaircut": "Children's Haircut",
+      "adultHaircut": "Adult Haircut",
+      "shaving": "Shaving",
+      "hairColoring": "Hair Coloring"
+    }
+  }
+}

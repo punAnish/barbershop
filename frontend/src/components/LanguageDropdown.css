@@ -1,0 +1,43 @@
+/* LanguageDropdown.css */
+
+/* Default styles for larger screens */
+.language-dropdown {
+  display: inline-block;
+  margin: 20px;
+}
+
+.language-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 5px;
+}
+
+.language-select > option {
+  background-color: #fff;
+  color: #222222;
+  border: none;
+  padding: 5px;
+}
+
+/* Media query for small devices (e.g., mobile) */
+@media (max-width: 768px) {
+  .language-dropdown {
+    display: block; /* Display vertically on small screens */
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .language-select {
+    width: 100%; /* Full width for better responsiveness */
+  }
+
+  .language-select::after {
+    display: none; /* Hide the dropdown arrow on small screens */
+  }
+}

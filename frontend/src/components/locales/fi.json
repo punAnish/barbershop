@@ -1,0 +1,56 @@
+{
+  "translation": {
+    "pageTitle": "Sivun otsikko suomeksi",
+    "someText": "Joitakin tekstejä sivulla suomeksi",
+    "selectService": "-- Valitse palvelu --",
+    "navbar": {
+      "home": "Etusivu",
+      "aboutUs": "Tietoa meistä",
+      "services": "Palvelut",
+      "login": "Kirjaudu sisään",
+      "signup": "Rekisteröidy",
+      "logout": "Kirjaudu ulos"
+    }
+  },
+  "appointmentForm": {
+    "customerName": "Asiakkaan nimi",
+    "serviceType": "Palvelun tyyppi",
+    "date": "Päivämäärä",
+    "timeSlot": "Aikaväli",
+    "notes": "Huomautukset",
+    "submit": "Lähetä",
+    "error": "Sinun on oltava kirjautunut sisään",
+    "bookAppointment": "Varaa aika",
+    "dateAndTimeInvalid": "Virheellinen päivä ja aika"
+  },
+  "home": {
+    "welcome": "Tervetuloa Barbershop MP:hen",
+    "description": "Yksi pysäkki täydellisen hiustenleikkauksen saamiseen!",
+    "bookNow": "Varaa nyt"
+  },
+  "serviceTypes": {
+    "childrenHaircut": "Lasten hiustenleikkaus",
+    "adultHaircut": "Aikuisten hiustenleikkaus",
+    "shaving": "Parranajo",
+    "hairColoring": "Hiusten värjäys"
+  },
+  "aboutUs": {
+    "title": "Tietoa meistä",
+    "description": "Parturi-kampaamo MP, perustettu vuonna 2023 kahden kokeneen hiusmuotoilijan toimesta, on omistautunut tarjoamaan poikkeuksellisia hoitokokemuksia. Parturi-kampaamo MP:n ytimessä on omistautuminen käsityötaitoon, jossa jokainen hiustyyli on kankaaseen ja jokainen palvelu on mestariteos. Kutsu sinut osallistumaan tyylisi matkaan, jonka asiantuntijabarberimme ohjaavat perinnettä moderneilla tekniikoilla. Parturi-kampaamo MP:n sitoutuminen erinomaisuuteen ulottuu tuolin ulkopuolelle tarjoten huolella valikoituja tuotteita ja lämpimän ilmapiirin, joka heijastaa intohimoamme hoitotyötä kohtaan. Tule mukaamme Parturi-kampaamo MP:hen, missä jokainen vierailu on mahdollisuus uudistaa tyyliäsi ja nostaa itseluottamustasi.",
+    "mapTitle": "Parturi-kampaamo MP kartta",
+    "contactTitle": "Ota yhteyttä",
+    "contactInfo": "Varauksia ja tiedusteluja varten otathan yhteyttä meihin numeroon",
+    "contactText": "Voit ottaa meihin yhteyttä milloin tahansa kysymyksissäsi tai hoitojen varaamiseksi",
+    "openingHoursTitle": "Aukioloajat",
+    "openingHoursText": "Maanantaista perjantaihin: 9:00 - 20:00\nLauantai: 11:00 - 16:00\nSunnuntai: Suljettu"
+  },
+  "services": {
+    "title": "Palvelut ja hinnoittelu",
+    "serviceTypes": {
+      "childrenHaircut": "Lasten hiustenleikkaus",
+      "adultHaircut": "Aikuisten hiustenleikkaus",
+      "shaving": "Parranajo",
+      "hairColoring": "Hiusten värjäys"
+    }
+  }
+}
