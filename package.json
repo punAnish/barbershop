@@ -1,7 +1,7 @@
 {
-  "name": "mern-tutorial",
+  "name": "barbershopMp",
   "version": "1.0.0",
-  "description": "Goalsetter app for youtube tutorial",
+  "description": "booking appointment",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
@@ -26,5 +26,8 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
