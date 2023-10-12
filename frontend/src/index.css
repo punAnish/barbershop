@@ -386,7 +386,7 @@ svg {
   align-items: center;
 }
 footer {
-  position: fixed; /* Fix the footer to the bottom of the viewport */
+  position: relative; /* Fix the footer to the bottom of the viewport */
   bottom: 0; /* Position it at the bottom */
   left: 0;
   right: 0; /* Stretch it to the full width of the viewport */
