@@ -20,7 +20,7 @@ const resources = {
         shaving: "Shaving",
         hairColoring: "Hair Coloring",
         bookAppointment: "Book an Appointment",
-        dateAndTimeInvalid: "Invalid Date and Time",
+        dateAndTimeInvalid: "Date and Time",
       },
       home: {
         title: "Home",
