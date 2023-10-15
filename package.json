@@ -26,6 +26,8 @@
     "mongoose": "^6.12.1",
     "react-i18next": "^13.2.2",
     "supertest": "^6.3.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
     "validator": "^13.11.0"
   },
   "devDependencies": {

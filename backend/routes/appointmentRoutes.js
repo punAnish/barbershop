@@ -1,5 +1,4 @@
 const express = require("express");
-const router = express.Router();
 const { protect } = require("../middleware/authMiddleware");
 const {
   getAppointments,
@@ -9,19 +8,165 @@ const {
   deleteAppointment,
 } = require("../controllers/appointmentController");
 
-// Route for getting appointments (GET /api/appointments)
+const router = express.Router();
+
+/**
+ * @swagger
+ * tags:
+ *   name: Appointments
+ *   description: API endpoints for managing appointments
+ */
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Appointment:
+ *       type: object
+ *       properties:
+ *         customerName:
+ *           type: string
+ *         serviceType:
+ *           type: string
+ *         date:
+ *           type: date
+ *
+ *         timeSlot:
+ *           type: string
+ *         notes:
+ *           type: string
+ *         required:
+ *          - customerName
+ *          - serviceType
+ *          - date
+ *          - timeSlot
+ *          - notes
+ *         example:
+ *          customerName: hafiz
+ *          serviceType: haircut
+ *          date: "2023-10-16T12:00:00.000Z"
+ *          timeSlot: 12:00
+ *          notes: i need short haircut
+ */
+
+// GET all appointments
+/**
+ * @swagger
+ * /appointments:
+ *   get:
+ *     summary: Get all appointments
+ *     tags: [Appointments]
+ *     responses:
+ *       200:
+ *         description: Returns an array of all appointments
+ *       500:
+ *         description: Internal server error
+ */
 router.get("/", protect, getAppointments);
 
-// Route for getting single appointment (GET /api/appointments/:id)
+// GET a single appointment
+/**
+ * @swagger
+ * /appointments/{_id}:
+ *   get:
+ *     summary: Get a single appointment by ID
+ *     tags: [Appointments]
+ *     parameters:
+ *       - in: path
+ *         name: _id
+ *         required: true
+ *         description: ID of the appointment to retrieve
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Returns a single appointment
+ *       404:
+ *         description: Appointment not found
+ *       500:
+ *         description: Internal server error
+ */
 router.get("/:_id", protect, getAppointment);
 
-// Route for creating a new appointment (POST /api/appointments)
+// POST a new appointment
+/**
+ * @swagger
+ * /appointments:
+ *   post:
+ *     summary: Create a new appointment
+ *     tags: [Appointments]
+ *     requestBody:
+ *       description: New appointment object
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Appointment'
+ *     responses:
+ *       201:
+ *         description: Appointment created successfully
+ *       400:
+ *         description: Bad request
+ *       500:
+ *         description: Internal server error
+ */
+
 router.post("/", protect, createAppointment);
 
-// Route for updating a appointment by ID (PUT /api/appointments/:id)
-router.put("/:_id", protect, updateAppointment);
+// UPDATE a appointment
+/**
+ * @swagger
+ * /appointments/{_id}:
+ *   patch:
+ *     summary: Update a appointment by ID
+ *     tags: [Appointments]
+ *     parameters:
+ *       - in: path
+ *         name: _id
+ *         required: true
+ *         description: ID of the appointment to update
+ *         schema:
+ *           type: string
+ *     requestBody:
+ *       description: Updated appointment object
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/Appointment'
+ *     responses:
+ *       200:
+ *         description: Appointment updated successfully
+ *       404:
+ *         description: Appointment not found
+ *       500:
+ *         description: Internal server error
+ */
 
-// Route for deleting a appointment by ID (DELETE /api/appointments/:id)
+router.patch("/:_id", protect, updateAppointment);
+
+// DELETE a appointment
+/**
+ * @swagger
+ * /appointments/{_id}:
+ *   delete:
+ *     summary: Delete a appointment by ID
+ *     tags: [Appointments]
+ *     parameters:
+ *       - in: path
+ *         name: _id
+ *         required: true
+ *         description: ID of the appointment to delete
+ *         schema:
+ *           type: string
+ *     responses:
+ *       204:
+ *         description: Appointment deleted successfully
+ *       404:
+ *         description: Appointment not found
+ *       500:
+ *         description: Internal server error
+ */
 router.delete("/:_id", protect, deleteAppointment);
 
 module.exports = router;
