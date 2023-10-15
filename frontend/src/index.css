@@ -1,0 +1,631 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+/* layout */
+:root {
+  --primary: #171717;
+  --error: #e7195a;
+  --button-color: #dc3030;
+}
+span {
+  margin: 10px;
+  font-size: small;
+  color: #fff;
+}
+span,
+.material-symbols-outlined {
+  margin-top: 0px;
+  margin-top: -10px;
+}
+
+.form-group {
+  font-weight: bold;
+}
+.form-group label {
+  font-size: 1.2em;
+}
+/* Define the styles for the button */
+button {
+  display: inline-block;
+  text-align: center;
+  background-color: #dc3030; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  padding: 3px;
+}
+
+/* Define a hover effect for the button */
+.button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Define additional styling if needed */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f1f1f1;
+  color: #000000;
+  font-family: "sans-serif " "Poppins ";
+  font-size: 18px;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust as needed */
+  color: #fff; /* Adjust as needed */
+}
+
+/* Show the nav-menu by default */
+.nav-menu {
+  display: flex; /* Changed from 'none' */
+}
+header {
+  background: #171717;
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px; /* Spacing between nav links */
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+/* homepage */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home > button {
+  background: var(--button-color);
+  border: 0;
+  width: 400px;
+  font-size: 26px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-start; /* This will align the button to the left side */
+}
+
+.appointment-details {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.appointment-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.appointment-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.appointment-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* form styles */
+form {
+  max-width: 350px; /* Sets the maximum width of the form */
+  max-height: 700px;
+  overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  margin: 10px auto;
+}
+
+label,
+input,
+select,
+textarea {
+  display: block;
+}
+
+input,
+select,
+textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button,
+.home > button {
+  background: var(--button-color);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error,
+div.success {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+div.error {
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+}
+
+div.success {
+  background: #e6ffe6;
+  border: 1px solid #33cc33;
+  color: #33cc33;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 1100px;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 800px;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Navbar container */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Navigation links */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+/* User information and buttons */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-email {
+  margin-right: 10px;
+}
+
+/* Login and Signup links */
+.login-signup {
+  display: flex;
+}
+
+.login-signup a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+svg {
+  font-size: 15px;
+}
+/* about us page */
+/* Styles for the AboutUs component */
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  max-width: 800px;
+  border-radius: 8px;
+  margin: 20px auto;
+  margin-bottom: 60px;
+  padding: 20px;
+  position: relative;
+}
+/* Style the Edit button */
+.edit {
+  background-color: #2196f3 !important; /* Blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove button border */
+  border-radius: 12px;
+  padding: 10px 20px; /* Padding around the text */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  margin-top: 10px; /* Add some space above the button */
+}
+/* Style the Save and Cancel buttons */
+.save,
+.cancel {
+  background-color: #4caf50; /* Green background color for Save */
+  background-color: #f44336; /* Red background color for Cancel */
+  color: white; /* White text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Padding around the text */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+/* Add some margin between the Save and Cancel buttons */
+.save {
+  margin-right: 10px;
+  background-color: #4caf50 !important;
+}
+
+.material-symbols-outlined {
+  margin-top: -10px; /* Move the element up by 10px */
+  color: red !important;
+  font-size: 24px;
+}
+
+/* contact */
+.contact {
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.aboutus h2 {
+  margin-top: 0;
+}
+
+.aboutus p {
+  margin: 10px 0;
+}
+
+/* Styles for the iframe */
+
+/* social media icons  */
+.icon {
+  display: inline;
+  flex-direction: row; /* Use 'row' to display icons horizontally */
+  margin: 10px;
+  justify-content: center;
+}
+
+/* Book appointment button */
+.booknow {
+  display: flex;
+  background-color: #dc3030;
+  color: #fff;
+  padding: 10px 20px;
+  width: 300px;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+footer {
+  position: relative; /* Fix the footer to the bottom of the viewport */
+  bottom: 0; /* Position it at the bottom */
+  left: 0;
+  right: 0; /* Stretch it to the full width of the viewport */
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+svg {
+  margin: auto;
+  text-align: center;
+}
+/*Homepage*/
+
+/* Style for the home page */
+
+img {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 200px;
+  bottom: 200px;
+  margin: 0 auto;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  background: #0e0122;
+  color: #fff;
+  border-radius: 20px;
+  margin: 80px auto;
+  padding: 20px;
+  position: relative;
+}
+
+.home-page h1 {
+  margin-top: 10px;
+}
+
+/* Style for the welcome heading */
+.home h1 {
+  font-size: 2.5rem;
+  color: #333; /* Change to your preferred text color */
+}
+
+/* Your regular navigation bar styles for desktop */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Your toggle button styles */
+.mobile-menu-toggle {
+  display: block; /* Show by default on all screen sizes */
+  color: red;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Media query for smaller screens */
+
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Style for the description paragraph */
+@media (max-width: 600px) {
+  .booknow {
+    margin: auto;
+    width: 50%;
+  }
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  img {
+    display: block; /* Change 'flex' to 'block' for images */
+    max-width: 90%; /* Reduce the width for smaller screens */
+    position: static; /* Remove positioning */
+    margin: auto; /* Center the image */
+  }
+}
+
+/* Media query for responsive design (adjust as needed) */
+@media screen and (max-width: 600px) {
+  .aboutus {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .home {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header a {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+  }
+  .home > button {
+    width: 100%;
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .appointment-details {
+    width: 100%;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column; /* Align links vertically on mobile */
+    width: 100%; /* Full width for mobile navigation */
+  }
+  .nav-menu.active {
+    display: block;
+  }
+  .home {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center; /* Center items for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  header a {
+    display: block; /* Stack nav links vertically */
+    margin: 10px 0; /* Adjust spacing for vertical stacking */
+  }
+
+  .home > button {
+    width: 100%; /* Makes the button full width on smaller screens */
+    margin-top: 10px;
+    align-self: center; /* Center the button */
+  }
+
+  form {
+    max-width: 100%; /* Allows the form to take up the full width on smaller screens */
+  }
+  .appointment-details {
+    width: 100%;
+  }
+  .home-page h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .home-page p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+/* Add this CSS to make the navigation responsive */

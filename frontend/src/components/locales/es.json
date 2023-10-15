@@ -1,0 +1,56 @@
+{
+  "translation": {
+    "pageTitle": "Título de la página en español",
+    "someText": "Algunos textos en la página en español",
+    "selectService": "-- Selecciona un servicio --",
+    "navbar": {
+      "home": "Inicio",
+      "aboutUs": "Sobre nosotros",
+      "services": "Servicios",
+      "login": "Iniciar sesión",
+      "signup": "Registrarse",
+      "logout": "Cerrar sesión"
+    }
+  },
+  "appointmentForm": {
+    "customerName": "Nombre del cliente",
+    "serviceType": "Tipo de servicio",
+    "date": "Fecha",
+    "timeSlot": "Franja horaria",
+    "notes": "Notas",
+    "submit": "Enviar",
+    "error": "Debes iniciar sesión",
+    "bookAppointment": "Reservar una cita",
+    "dateAndTimeInvalid": "Fecha y hora no válidas"
+  },
+  "serviceTypes": {
+    "childrenHaircut": "Corte de pelo para niños",
+    "adultHaircut": "Corte de pelo para adultos",
+    "shaving": "Afeitado",
+    "hairColoring": "Tinte para el cabello"
+  },
+  "home": {
+    "welcome": "Bienvenido a Barbershop MP",
+    "description": "Tu destino único para el corte de pelo perfecto",
+    "bookNow": "Reservar ahora"
+  },
+  "aboutUs": {
+    "title": "Sobre nosotros",
+    "description": "BarbershopMP, fundada en 2023 por dos estilistas senior, es un testimonio de una visión compartida de ofrecer experiencias de aseo excepcionales. En el corazón de BarbershopMP hay una dedicación a la artesanía, donde cada corte de pelo es un lienzo y cada servicio es una obra maestra. Te invitamos a disfrutar de un viaje de estilo, guiado por nuestros expertos barberos que mezclan la tradición con técnicas modernas. El compromiso de BarbershopMP con la excelencia se extiende más allá de la silla, ofreciendo productos cuidadosamente seleccionados y un ambiente cálido que refleja nuestra pasión por el aseo. Únete a nosotros en BarbershopMP, donde cada visita es una oportunidad para redefinir tu estilo y elevar tu confianza.",
+    "mapTitle": "Mapa de BarbershopMP",
+    "contactTitle": "Contáctanos",
+    "contactInfo": "Para citas y consultas, por favor contáctanos al",
+    "contactText": "No dudes en ponerte en contacto con nosotros si tienes alguna pregunta o para reservar tu experiencia de aseo",
+    "openingHoursTitle": "Horario de apertura",
+    "openingHoursText": "Lunes a viernes: 9:00 AM a 8:00 PM\nSábado: 11:00 AM a 4:00 PM\nDomingo: Cerrado"
+  },
+  "services": {
+    "title": "Servicios y precios",
+    "serviceTypes": {
+      "childrenHaircut": "Corte de niños",
+      "adultHaircut": "Corte de adultos",
+      "shaving": "Afeitado",
+      "hairColoring": "Coloración de cabello"
+    }
+  }
+}
