@@ -8,7 +8,8 @@
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "all": "concurrently \"npm run server\" \"npm run client\"",
-    "test": "cross-env NODE_ENV=test mocha backend/test/user.test.cjs && mocha backend/test/appointment.test.cjs && mocha backend/test/teardown.cjs"
+    "test": "cross-env NODE_ENV=test mocha backend/test/user.test.cjs && mocha backend/test/appointment.test.cjs && mocha backend/test/teardown.cjs",
+    "build": "npm i"
   },
   "license": "MIT",
   "dependencies": {
